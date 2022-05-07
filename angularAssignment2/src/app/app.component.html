@@ -5,7 +5,7 @@
   <li>Upon clicking the button, the username should be reset to an empty string</li>
 </ol>
 <hr>
-<p>Username</p>
+<p>Add Username</p>
 <input type="text" class="form-control" [(ngModel)]="username">
 <p>{{ username }}</p>
 <button class="btn btn-primary" [disabled]="username === ''" (click)=" username= ''">Reset User</button>
