@@ -10,6 +10,7 @@ export class SuccessAlertComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

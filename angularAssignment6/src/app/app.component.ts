@@ -8,7 +8,7 @@ import {NgForm} from "@angular/forms";
 })
 export class AppComponent {
   subscritptions = ['Basic', 'Advanced', 'Pro'];
-  selectedSubs = "Advanced";
+  selectedSubs = "";
 
   @ViewChild("signUpForm") sgnForm: NgForm | undefined;
 
