@@ -3,25 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e129e3e8-3332-48bb-b9cf-2f40ba820de5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment/src/app/success-alert/success-alert.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment/src/app/success-alert/success-alert.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment/src/app/success-alert/success-alert.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment2/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment2/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment2/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment2/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment2/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment2/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment2/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment2/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment2/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment2/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment3/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment3/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment3/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment3/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment3/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment3/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment3/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment3/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment3/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment6/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment6/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularAssignment6/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularAssignment6/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/home/home.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/pricing/pricing.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/pricing/pricing.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/pricing/table/table.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/pricing/table/table.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/pricing/table/table.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/pricing/table/table.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +83,7 @@
       <workItem from="1652702643720" duration="3372000" />
       <workItem from="1653029515362" duration="165562000" />
       <workItem from="1654185444841" duration="75091000" />
-      <workItem from="1654844327896" duration="46274000" />
+      <workItem from="1654844327896" duration="52501000" />
     </task>
     <servers />
   </component>
