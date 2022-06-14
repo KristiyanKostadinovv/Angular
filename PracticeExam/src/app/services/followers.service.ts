@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {FollowerModel} from "../models/follower-model";
+import {FollowerModel} from "../models/follower.model";
 import {map} from "rxjs";
 
 const URL = "https://exam-6734d-default-rtdb.europe-west1.firebasedatabase.app/followers.json";
@@ -19,13 +19,10 @@ export class FollowersService {
       t_and_c: t_and_c,
       title: title
     }
-    this.http.post(URL, follower).subscribe(data => {
-      //outputs the id key string
-      console.log(data);
-    });
+    this.http.post(URL, follower).subscribe();
   }
 
-  displayFollowers() {
+  getFollowers() {
     return this.http.get<{ [key: string]: FollowerModel }>(URL).pipe(
       map((getData: { [key: string]: FollowerModel }) => {
         const followersArray: FollowerModel[] = [];

@@ -1,29 +1,33 @@
-import {Component, OnInit} from '@angular/core';
-import {FollowerModel} from "../../models/follower-model";
-import {HttpClient} from "@angular/common/http";
-import {FollowersService} from "../../services/followers.service";
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {FollowerModel} from "../../models/follower.model";
+import {ActivatedRoute, Data} from "@angular/router";
+import {takeWhile} from "rxjs";
 
 @Component({
   selector: 'app-followers',
   templateUrl: './followers.component.html',
   styleUrls: ['./followers.component.css']
 })
-export class FollowersComponent implements OnInit {
+export class FollowersComponent implements OnInit, OnDestroy {
   public followers: FollowerModel[] = [];
   public isFetching: boolean = false;
+  private isComponentAlive: boolean = true;
 
-  constructor(private http: HttpClient, private followersService: FollowersService) {
+  constructor(private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.getFollowers();
-  }
-
-  private getFollowers(): void {
     this.isFetching = true;
-    this.followersService.displayFollowers().subscribe(data => {
+    this.activatedRoute.data.pipe(
+      takeWhile(() => this.isComponentAlive)
+    ).subscribe((data: Data) => {
+      this.followers = data['data'];
       this.isFetching = false;
-      this.followers = data;
     });
   }
+
+  ngOnDestroy(): void {
+    this.isComponentAlive = false;
+  }
+
 }

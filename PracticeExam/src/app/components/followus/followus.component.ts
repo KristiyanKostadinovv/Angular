@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {FollowerModel} from "../../models/follower-model";
+import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/forms";
+import {FollowerModel} from "../../models/follower.model";
 import {HttpClient} from "@angular/common/http";
 import {FollowersService} from "../../services/followers.service";
 
@@ -49,31 +49,31 @@ export class FollowusComponent implements OnInit {
   constructor(private http: HttpClient, private followerService: FollowersService) {
   }
 
-  get followUsForm() {
+  get followUsForm():FormGroup {
     return this.formGroup;
   }
 
-  get title() {
+  get title():AbstractControl {
     return this.formGroup.get(TITLE)!;
   }
 
-  get name() {
+  get name():AbstractControl {
     return this.formGroup.get(NAME)!;
   }
 
-  get email() {
+  get email():AbstractControl {
     return this.formGroup.get(EMAIL)!;
   }
 
-  get country() {
+  get country():AbstractControl {
     return this.formGroup.get(COUNTRY)!;
   }
 
-  get notificationFr() {
+  get notificationFr():AbstractControl {
     return this.formGroup.get(N_FREQUENCY)!;
   }
 
-  get terms() {
+  get terms():AbstractControl {
     return this.formGroup.get(T_AND_C)!;
   }
 

@@ -1,5 +1,5 @@
 import {Component, OnInit, Input} from '@angular/core';
-import {PriceModel} from "../../../models/price-model";
+import {PriceModel} from "../../../models/price.model";
 
 
 @Component({
