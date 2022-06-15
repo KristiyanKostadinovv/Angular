@@ -8,6 +8,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { FollowersComponent } from './components/followers/followers.component';
 import { HttpClientModule} from "@angular/common/http";
+import { NavigationMenuComponent } from './components/header/navigation-menu/navigation-menu.component';
+import { SliderComponent } from './components/header/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { HttpClientModule} from "@angular/common/http";
     FooterComponent,
     routingComponents,
     FollowersComponent,
+    NavigationMenuComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,

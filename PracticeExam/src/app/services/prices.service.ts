@@ -9,7 +9,7 @@ export class PricesService {
   constructor(private http: HttpClient) {
   }
 
-  getData() {
+  getPrices() {
     return this.http.get<PriceModel>(URL);
   }
 }

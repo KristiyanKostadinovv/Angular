@@ -11,6 +11,6 @@ export class PricesResolver implements Resolve<Observable<PriceModel>>{
   }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<PriceModel> {
-    return this.pricesService.getData();
+    return this.pricesService.getPrices();
   }
 }

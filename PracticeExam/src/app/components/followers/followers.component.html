@@ -21,11 +21,14 @@
                 </thead>
                 <tbody>
                 <tr class="candidates-list" *ngFor="let follower of followers">
-                  <td class="title">
+                  <td class="title" >
                     <div class="thumb">
                       <img class="img-fluid"
-                           src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1024px-User_icon_2.svg.png"
-                           alt="img">
+                           src="https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-512.png"
+                           *ngIf="follower.title==='Mr.'" alt="img">
+                      <img class="img-fluid"
+                           src="https://cdn2.iconfinder.com/data/icons/avatars-60/5985/15-Actress-512.png"
+                           *ngIf="follower.title==='Ms.'" alt="img">
                     </div>
                     <div class="candidate-list-details">
                       <div class="candidate-list-info">
