@@ -41,7 +41,7 @@ export class FollowusComponent implements OnInit {
       name: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(35), Validators.pattern(this.letters)]),
       email: new FormControl('', [Validators.pattern(this.emailValidation), Validators.required]),
       country: new FormControl('', Validators.required),
-      notification_frequency: new FormControl('', Validators.required),
+      notification_frequency: new FormControl(''),
       t_and_c: new FormControl('', Validators.required)
     });
   }
