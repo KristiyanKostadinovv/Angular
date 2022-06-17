@@ -4,14 +4,13 @@ import {ActivatedRouteSnapshot, Resolve, RouterStateSnapshot} from "@angular/rou
 import {FollowerModel} from "../models/follower.model";
 import {Observable} from "rxjs";
 
-
 @Injectable({providedIn: "root"})
-export class FollowersResolver implements Resolve<Observable<FollowerModel[]>> {
+export class FollowersResolver implements Resolve<Observable<FollowerModel[] | string>> {
 
   constructor(private readonly followersService: FollowersService) {
   }
 
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<FollowerModel[]> {
-    return this.followersService.getFollowers();
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<FollowerModel[] | string> {
+    return this.followersService.getFollowers()
   }
 }

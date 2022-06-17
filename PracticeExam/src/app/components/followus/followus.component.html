@@ -73,18 +73,19 @@
                     </div>
                     <div class="d-flex justify-content-center mb-5">
                       <input class="form-check-input me-2" type="checkbox" id="t_and_c" name="t_and_c"
-                             formControlName="t_and_c"/>
+                             formControlName="t_and_c" #t_and_c/>
                       <label class="form-check-label" for="t_and_c">
                         I agree all statements in Terms of service*
                       </label>
                     </div>
                     <div class="d-flex justify-content-center mt-3">
-                      <button class="btn btn-primary btn-lg me-5" type="submit" [disabled]="followUsForm.invalid"
+                      <button class="btn btn-primary btn-lg me-5" type="submit"
+                              [disabled]="followUsForm.invalid || !t_and_c.checked"
                               (click)="onCreateFollower(followForm.value)">Submit
                       </button>
                       <button class="btn btn-danger btn-lg" (click)="reset()">Reset</button>
-                      <!--<button class="btn btn-danger btn-lg  marginLeft2" type="delete" (click)="deleteRequest()">Delete
-                      </button>-->
+                      <!-- <button class="btn btn-danger btn-lg  marginLeft2" type="delete" (click)="deleteRequest()">Delete
+                       </button>-->
                     </div>
                   </form>
                 </div>
