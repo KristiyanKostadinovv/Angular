@@ -3,12 +3,19 @@ import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/form
 import {FollowerModel} from "../../models/follower.model";
 import {HttpClient} from "@angular/common/http";
 import {FollowersService} from "../../services/followers.service";
+import {RegionEnum} from "../../enums/region.enum";
+import {NotificationEnum} from "../../enums/notification.enum";
 
 //countries
 const BULGARIA: string = "Bulgaria";
 const UK: string = "United Kingdom";
 const GERMANY: string = "Germany";
 const FRANCE: string = "France";
+
+//notifications
+const DAILY: string = "Daily";
+const WEEKLY: string = "Weekly";
+const MONTHLY: string = "Monthly";
 
 //titles
 const MR: string = "Mr.";
@@ -29,11 +36,24 @@ const T_AND_C: string = "t_and_c";
 })
 export class FollowusComponent implements OnInit {
 
-  public countries: Array<string> = [BULGARIA, UK, GERMANY, FRANCE];
   public titles: Array<string> = [MR, MS];
+
   private letters: RegExp = /^[A-Za-z]+$/;
   private emailValidation: RegExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   private formGroup = new FormGroup({});
+
+  public readonly regions: Array<{ key: string, label: string }> = [
+    {key: RegionEnum.Bulgaria, label: BULGARIA},
+    {key: RegionEnum.UnitedKingdom, label: UK},
+    {key: RegionEnum.Germany, label: GERMANY},
+    {key: RegionEnum.France, label: FRANCE},
+  ];
+
+  public readonly notifications: Array<{ key: string, label: string }> = [
+    {key: NotificationEnum.Daily, label: DAILY},
+    {key: NotificationEnum.Weekly, label: WEEKLY},
+    {key: NotificationEnum.Monthly, label: MONTHLY}
+  ];
 
   ngOnInit(): void {
     this.formGroup = new FormGroup({
@@ -49,35 +69,35 @@ export class FollowusComponent implements OnInit {
   constructor(private http: HttpClient, private followerService: FollowersService) {
   }
 
-  get followUsForm():FormGroup {
+  get followUsForm(): FormGroup {
     return this.formGroup;
   }
 
-  get title():AbstractControl {
+  get title(): AbstractControl {
     return this.formGroup.get(TITLE)!;
   }
 
-  get name():AbstractControl {
+  get name(): AbstractControl {
     return this.formGroup.get(NAME)!;
   }
 
-  get email():AbstractControl {
+  get email(): AbstractControl {
     return this.formGroup.get(EMAIL)!;
   }
 
-  get country():AbstractControl {
+  get country(): AbstractControl {
     return this.formGroup.get(COUNTRY)!;
   }
 
-  get notificationFr():AbstractControl {
+  get notificationFr(): AbstractControl {
     return this.formGroup.get(N_FREQUENCY)!;
   }
 
-  get terms():AbstractControl {
+  get terms(): AbstractControl {
     return this.formGroup.get(T_AND_C)!;
   }
 
-  public onCreateFollower(followerData: FollowerModel):void {
+  public onCreateFollower(followerData: FollowerModel): void {
     this.followerService.createAndSaveFollower(followerData.title, followerData.name, followerData.email, followerData.country, followerData.notification_frequency, followerData.t_and_c);
     this.reset();
   }

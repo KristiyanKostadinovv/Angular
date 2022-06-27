@@ -20,7 +20,7 @@ export class FollowersService {
       notification_frequency: notification_frequency,
       t_and_c: t_and_c,
       title: title
-    }
+    };
     this.http.post(URL, follower).pipe(
       catchError(error => {
         if (error.error instanceof ErrorEvent) {

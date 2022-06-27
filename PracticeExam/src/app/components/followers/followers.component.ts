@@ -2,6 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {FollowerModel} from "../../models/follower.model";
 import {ActivatedRoute, Data} from "@angular/router";
 import {takeWhile} from "rxjs";
+import {RegionEnum} from "../../enums/region.enum";
 
 @Component({
   selector: 'app-followers',
@@ -12,6 +13,7 @@ export class FollowersComponent implements OnInit, OnDestroy {
   public followers: FollowerModel[] = [];
   public isFetching: boolean = false;
   private isComponentAlive: boolean = true;
+  public flag: typeof RegionEnum = RegionEnum;
 
   constructor(private activatedRoute: ActivatedRoute) {
   }
@@ -29,5 +31,4 @@ export class FollowersComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.isComponentAlive = false;
   }
-
 }

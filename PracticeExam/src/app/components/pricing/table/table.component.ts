@@ -1,7 +1,6 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {PriceModel} from "../../../models/price.model";
 
-
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',

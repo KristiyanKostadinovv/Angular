@@ -1,6 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {PriceModel} from "../../models/price.model";
-import {PricesService} from "../../services/prices.service";
 import {ActivatedRoute, Data} from "@angular/router";
 
 @Component({
@@ -11,13 +10,13 @@ import {ActivatedRoute, Data} from "@angular/router";
 export class PricingComponent implements OnInit, OnDestroy {
 
   public price: PriceModel | null = null;
-  private isComponentAlive:boolean  = true;
+  private isComponentAlive: boolean = true;
 
   constructor(private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.activatedRoute.data.subscribe((data:Data) => {
+    this.activatedRoute.data.subscribe((data: Data) => {
       this.price = data['data'];
     });
   }

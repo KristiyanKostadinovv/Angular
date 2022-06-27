@@ -19,7 +19,7 @@ import { SliderComponent } from './components/header/slider/slider.component';
     routingComponents,
     FollowersComponent,
     NavigationMenuComponent,
-    SliderComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

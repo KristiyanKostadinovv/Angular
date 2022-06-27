@@ -49,7 +49,8 @@
                       <div class="d-flex justify-content-center">
                         <select name="country" class="form-control w-auto me-2" id="country"
                                 formControlName="country">
-                          <option *ngFor="let countryCh of countries" [ngValue]="countryCh">{{countryCh}}</option>
+                          <option hidden></option>
+                          <option *ngFor="let region of regions" [value]="region.key">{{region.label}}</option>
                         </select>
                       </div>
                       <small class="mat-error" *ngIf="country.invalid && country.touched">Please select a
@@ -59,32 +60,28 @@
                       <i class="fas fa-bell fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <label class="form-label" for="email">Notification Frequency</label>
-                        <div>
-                          <input class="form-check-input me-2" type="radio" name="notification_frequency" value="Daily"
-                                 formControlName="notification_frequency"> Daily
-                          <input class="form-check-input me-2 marginLeft" type="radio" name="notification_frequency"
-                                 value="Weekly"
-                                 formControlName="notification_frequency"> Weekly
-                          <input class="form-check-input me-2 marginLeft" type="radio" name="notification_frequency"
-                                 value="Monthly"
-                                 formControlName="notification_frequency"> Monthly
+                        <div *ngFor="let notification of notifications">
+                          <input class="form-check-input me-2" type="radio" name="notification_frequency"
+                                 [value]="notification.key" formControlName="notification_frequency"> {{notification.label}}
                         </div>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-center mb-5">
+                    <div class="d-flex justify-content-center">
                       <input class="form-check-input me-2" type="checkbox" id="t_and_c" name="t_and_c"
                              formControlName="t_and_c" #t_and_c/>
                       <label class="form-check-label" for="t_and_c">
                         I agree all statements in Terms of service*
                       </label>
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
+                    <small class="mat-error d-flex justify-content-center" *ngIf="!t_and_c.checked && terms.touched">Please
+                      agree to the terms!</small>
+                    <div class="d-flex justify-content-center mt-4">
                       <button class="btn btn-primary btn-lg me-5" type="submit"
                               [disabled]="followUsForm.invalid || !t_and_c.checked"
                               (click)="onCreateFollower(followForm.value)">Submit
                       </button>
-                      <button class="btn btn-danger btn-lg" (click)="reset()">Reset</button>
-                      <!-- <button class="btn btn-danger btn-lg  marginLeft2" type="delete" (click)="deleteRequest()">Delete
+                      <button class="btn btn-danger btn-lg me-5" (click)="reset()">Reset</button>
+                       <!--<button class="btn btn-danger btn-lg  marginLeft2" type="delete" (click)="deleteRequest()">Delete
                        </button>-->
                     </div>
                   </form>

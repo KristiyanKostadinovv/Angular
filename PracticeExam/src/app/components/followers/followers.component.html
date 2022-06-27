@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous"/>
 <div class="container mt-3 mb-4">
   <h2 class="d-flex justify-content-center marginTop marginBottom" *ngIf="isFetching; else content" style="color:red">
     Loading...</h2>
@@ -25,10 +23,10 @@
                     <div class="thumb">
                       <img class="img-fluid"
                            src="https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-512.png"
-                           *ngIf="follower.title==='Mr.'" alt="img">
+                           *ngIf="follower.title==='Mr.'" alt="male">
                       <img class="img-fluid"
                            src="https://cdn2.iconfinder.com/data/icons/avatars-60/5985/15-Actress-512.png"
-                           *ngIf="follower.title==='Ms.'" alt="img">
+                           *ngIf="follower.title==='Ms.'" alt="female">
                     </div>
                     <div class="candidate-list-details">
                       <div>
@@ -38,8 +36,22 @@
                         <div>
                           <ul class="list-unstyled">
                             <li><i class="fas fa-envelope me-1"></i>{{follower.email}}</li>
-                            <li><i class="fas fa-map-marker-alt me-1"></i>{{follower.country}}</li>
+                            <li class="text-uppercase">
+                              <i class="fas fa-map-marker-alt me-1"></i>{{follower.country}}
+                            </li>
                           </ul>
+                          <div [ngSwitch]="follower.country">
+
+                            <p *ngSwitchCase="flag.UnitedKingdom"
+                               class="flag flag-{{flag.UnitedKingdom}}"></p>
+                            <p *ngSwitchCase="flag.France"
+                               class="flag flag-{{flag.France}}"></p>
+                            <p *ngSwitchCase="flag.Bulgaria"
+                               class="flag flag-{{flag.Bulgaria}}"></p>
+                            <p *ngSwitchCase="flag.Germany"
+                               class="flag flag-{{flag.Germany}}"></p>
+
+                          </div>
                         </div>
                       </div>
                     </div>
