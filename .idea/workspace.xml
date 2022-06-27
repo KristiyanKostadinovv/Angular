@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e129e3e8-3332-48bb-b9cf-2f40ba820de5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/followers/followers.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/followers/followers.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/followers/followers.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/followers/followers.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/followers/followers.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/followers/followers.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/followus/followus.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/followus/followus.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/followus/followus.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/followus/followus.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/pricing/pricing.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/pricing/pricing.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/components/pricing/table/table.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/components/pricing/table/table.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/services/followers.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/services/followers.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeExam/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeExam/src/app/enums/notification.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeExam/src/app/enums/notification.enum.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +53,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="C:\Users\kkostadinov\Documents\GitHub\Angular\angularAssignment\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\kkostadinov\Documents\GitHub\Angular\courseProject\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -100,6 +89,7 @@
       <workItem from="1655997474359" duration="2000" />
       <workItem from="1656052119209" duration="19789000" />
       <workItem from="1656313827444" duration="19753000" />
+      <workItem from="1656337564593" duration="2864000" />
     </task>
     <servers />
   </component>

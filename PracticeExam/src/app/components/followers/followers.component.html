@@ -40,24 +40,15 @@
                               <i class="fas fa-map-marker-alt me-1"></i>{{follower.country}}
                             </li>
                           </ul>
-                          <div [ngSwitch]="follower.country">
-
-                            <p *ngSwitchCase="flag.UnitedKingdom"
-                               class="flag flag-{{flag.UnitedKingdom}}"></p>
-                            <p *ngSwitchCase="flag.France"
-                               class="flag flag-{{flag.France}}"></p>
-                            <p *ngSwitchCase="flag.Bulgaria"
-                               class="flag flag-{{flag.Bulgaria}}"></p>
-                            <p *ngSwitchCase="flag.Germany"
-                               class="flag flag-{{flag.Germany}}"></p>
-
+                          <div>
+                            <p class="flag flag-{{follower.country}}"></p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </td>
                   <td class="text-center">
-                    <span>{{follower.notification_frequency}}</span>
+                    <span class="text-capitalize">{{follower.notification_frequency}}</span>
                     <span *ngIf="follower.notification_frequency === ''">None</span>
                   </td>
                   <td class="text-center">

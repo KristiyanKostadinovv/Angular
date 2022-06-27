@@ -1,5 +1,5 @@
 export enum NotificationEnum{
-  Daily = "Daily",
-  Weekly = "Weekly",
-  Monthly = "Monthly"
+  Daily = "daily",
+  Weekly = "weekly",
+  Monthly = "monthly"
 }
